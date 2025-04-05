@@ -1,0 +1,140 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Optional layout debugging */
+div {
+    /* border: 1px solid red; */
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.5fr;
+    grid-template-rows: auto 1fr auto;
+    align-items: start;
+}
+
+/* Header */
+.top {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: #8b5e3c;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Navigation */
+.leftbox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #f3e2c7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.leftbox ul {
+    list-style: none;
+}
+
+.leftbox li {
+    margin: 15px 0;
+}
+
+.leftbox a {
+    text-decoration: none;
+    color: #5a3d1e;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.leftbox a:hover {
+    color: #d2691e;
+}
+
+/* Middle Content */
+.middelbox {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #fffaf0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.middelbox h2 {
+    color: #8b5e3c;
+    margin-bottom: 10px;
+}
+
+.middelbox p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Right Content (Image/Extra Info) */
+.rightbox {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: #f3e2c7;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.rightbox img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.bottom, footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: #8b5e3c;  /* Deep burlywood/brown tone */
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+/* Flex Container (Inside middelbox if used) */
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.leftbox,
+.middelbox,
+.rightbox,
+{ height: 100%}
+
+
+
+
+
+
+
+
+
+
